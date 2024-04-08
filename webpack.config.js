@@ -26,6 +26,18 @@ module.exports = {
                     "sass-loader",
                 ],
             },
+            {
+                test: /\.(woff(2)?|ttf|eot)$/,
+                generator: {
+                    filename: './src/assets/fonts/[name][ext]',
+                },
+            },
+            {
+                test: /\.(png)$/,
+                generator: {
+                    filename: './src/assets/images/main/[name][ext]',
+                },
+            },
         ],
     },
     plugins: [
@@ -34,8 +46,7 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-                {from: "./src/assets/images", to: "assets/images"},
-                {from: "./src/assets/styles", to: "assets/styles"},
+                {from: "./src", to: "src"},
             ],
         }),
     ],

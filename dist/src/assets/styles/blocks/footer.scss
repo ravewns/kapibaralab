@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 96px;
+  background-color: $second-base-color;
+  .container {
+    .footer-info {
+      height: 150px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .footer-info-rights {
+        color: white;
+      }
+    }
+  }
+}
