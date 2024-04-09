@@ -87,7 +87,6 @@
   }
 
   .banner {
-    background-image: url("../images/main/banner_mob.png");
     background-position: center;
     height: 282px;
 
@@ -119,7 +118,6 @@
     .container {
       .welcome-title-text {
         font-size: 18px;
-        max-width: 324px;
         padding: 73px 0 30px 0;
       }
     }
@@ -153,6 +151,7 @@
         .lab-image {
           order: 1;
           margin-bottom: 24px;
+          margin-left: 0;
         }
       }
     }
@@ -239,7 +238,7 @@
             margin-bottom: 19px;
 
             input {
-              width: 91%;
+              width: calc(100% - 30px);
               margin-right: 0;
             }
           }
@@ -263,6 +262,58 @@
 
           .footer-info-logo {
             order: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .banner {
+    background-image: url("../images/main/banner_mob.png");
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner {
+    .container {
+      .banner-info {
+        .banner-info-block {
+          .one {
+            width: 249px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .lab {
+    .container {
+      .lab-image {
+        img {
+          width: 300px;
+          height: 265px;
+        }
+      }
+    }
+  }
+
+  .request {
+    .container {
+      height: 650px;
+    }
+  }
+
+  .gallery {
+    .container {
+      .gallery-block {
+        .gallery-item {
+          img {
+            width: 280px;
+            height: 200px;
           }
         }
       }

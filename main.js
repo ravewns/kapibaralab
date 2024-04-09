@@ -6,17 +6,12 @@ const patronymic = document.getElementById('request-input-patronymic');
 const form = document.getElementById("form");
 
 const xhr = new XMLHttpRequest();
-xhr.open("GET", "http://httpbin.org/uuid"); // Простая эмуляция успешного запроса на Backend.
+xhr.open("POST", "http://httpbin.org/post"); // Простая эмуляция успешного запроса на Backend.
 
 function handleForm(event) {
     event.preventDefault();
 }
 form.addEventListener('submit', handleForm);
-
-form.style.display = 'none';
-document.getElementById('req-title').style.display = 'none';
-document.getElementById('req-description').style.display = 'none';
-document.getElementById('req-success-block').style.display = 'flex';
 
 sendBtn.onclick = function () {
     if (name.value && surname.value && patronymic.value) {
@@ -30,6 +25,6 @@ sendBtn.onclick = function () {
                 alert('Ошибка запроса. Повторите позже.')
             }
         };
-        xhr.send();
+        xhr.send('Фамилия - ' + surname.value + ' Имя - ' + name.value + ' Отчество - ' + patronymic.value);
     }
 }
