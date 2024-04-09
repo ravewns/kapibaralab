@@ -1,10 +1,12 @@
 @import "variables";
 
+
 html, body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -15,3 +17,4 @@ html, body {
 h1, h2, p {
   margin: 0;
 }
+

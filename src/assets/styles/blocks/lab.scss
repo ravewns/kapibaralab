@@ -3,18 +3,17 @@
   padding: 48px 0 48px 0;
 
   .container {
+    .lab-title {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 36px;
+    }
     .lab-content {
       display: flex;
       justify-content: space-between;
 
       .lab-info {
         width: 1020px;
-
-        .lab-title {
-          font-size: 36px;
-          font-weight: 600;
-          margin-bottom: 36px;
-        }
 
         .lab-description {
           .lab-description-text {
@@ -30,7 +29,7 @@
 
       .lab-btn {
         border: none;
-        width: 213px;
+        width: 245px;
         height: 53px;
         padding: 12px 18px;
         box-sizing: border-box;
@@ -41,11 +40,13 @@
         justify-content: space-between;
         border-radius: 8px;
         cursor: pointer;
+        font-size: 21px;
+        text-decoration: none;
       }
 
       .lab-btn-icon svg {
         width: 30px;
-        margin-top: 6px;
+        margin-top: 10px;
       }
     }
     .lab-image img {
