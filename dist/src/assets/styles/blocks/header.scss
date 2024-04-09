@@ -1,0 +1,76 @@
+.container.header {
+  padding: 55px 0 55px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    height: 29px;
+  }
+
+  .header-logo-text {
+    max-width: 210px;
+    font-size: 14px;
+    margin-left: 24px;
+  }
+
+  .header-menu ul {
+    display: flex;
+    padding: 0;
+
+    li {
+      list-style: none;
+      margin-right: 48px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+
+      a {
+        padding: 8px 24px;
+        border-radius: 4px;
+        transition: 0.3s;
+        text-decoration: none;
+        color: black;
+      }
+
+      :hover {
+        background-color: rgb(233, 234, 249);
+        color: $second-base-color;
+        transition: 0.3s;
+      }
+    }
+
+    li:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .header-phone {
+    display: flex;
+    align-items: center;
+
+    .header-phone-icon {
+      margin-right: 8px;
+    }
+
+    .header-phone-info {
+      .header-phone-info-numbers {
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: black;
+          transition: 0.3s;
+        }
+        :hover {
+          color: $second-base-color;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
+
